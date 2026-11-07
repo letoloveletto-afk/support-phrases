@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучи Добра — Генератор поддержки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="card">
+        <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+        </div>
+
+        <h1>Лучи Добра</h1>
+        <p class="subtitle">Твоя доза поддержки</p>
+
+        <div class="category-badge" id="categoryBadge">✨ Вдохновение</div>
+
+        <div class="phrase-container">
+            <p class="phrase" id="phrase">Нажми на кнопку, чтобы получить тёплые слова ✨</p>
+        </div>
+
+        <button class="btn" id="generateBtn">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+            Согреть меня
+        </button>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-value" id="counter">0</span>
+                <span class="stat-label">Фраз сгенерировано</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="totalCount">150</span>
+                <span class="stat-label">Фраз в базе</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
